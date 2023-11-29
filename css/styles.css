@@ -1,7 +1,7 @@
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #fff;
-  color: #2e2f42;
+  color: #434455;
 }
 h1 {
   color: white;
@@ -22,10 +22,11 @@ a {
 p {
   color: #2e2f42;
 }
-.header .logo-top {
+/* #region header*/
+.logo-top {
   font-size: 18px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 1.17;
   letter-spacing: 0.54px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -41,28 +42,32 @@ p {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-.page-nav > li:hover {
-  color: #a9a9bd;
-  background-color: #f4f4fd;
+.page-nav .nav:hover {
+  color: #404bbf;
+}
+.page-nav .nav:focus {
+  color: #404bbf;
 }
 .page-nav .nav:active {
   background-color: #f4f4fd;
   color: #f4f4fd;
 }
 
-.header .contact {
+.contacts .contact {
   color: #434455;
   font-size: 16px;
   font-weight: 400;
+  font-style: normal;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
 .header .contact:hover {
-  color: #a9a9bd;
+  color: #404bbf;
 }
-.header .contact:active {
-  color: #a9a9bd;
+.header .contact:focus {
+  color: #404bbf;
 }
+/* #endregion */
 .main-page {
   background-color: #2e2f42;
 }
