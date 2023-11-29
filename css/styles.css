@@ -23,7 +23,7 @@ p {
   color: #2e2f42;
 }
 /* #region header*/
-.header .logo-top {
+.page-nav .logo-top {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
@@ -32,7 +32,7 @@ p {
   text-transform: uppercase;
   color: #4d5ae5;
 }
-.header .logo-top > span {
+.page-nav .logo-top > span {
   color: #2e2f42;
 }
 .page-nav .nav {
