@@ -76,7 +76,7 @@ a {
   letter-spacing: 0.64px;
 }
 .button:hover,
-.botton:focus {
+.button:focus {
   background-color: #404bbf;
 }
 /* #endregion */
@@ -107,7 +107,7 @@ a {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
@@ -152,7 +152,7 @@ a {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.11;
   letter-spacing: 0.4px;
 }
 .text-port-list {
@@ -173,13 +173,13 @@ a {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 1.17;
   letter-spacing: 0.54px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #4d5ae5;
 }
-.footer-logo > span {
+.span {
   color: #f4f4fd;
 }
 .footer-text {
@@ -190,5 +190,4 @@ a {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-
 /* #endregion footer */
