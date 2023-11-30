@@ -130,7 +130,7 @@ a {
 .team {
   background-color: #f4f4fd;
 }
-.team-list > li {
+.team-list {
   background-color: #ffffff;
 }
 
