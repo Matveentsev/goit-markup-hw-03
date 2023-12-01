@@ -6,7 +6,12 @@ body {
 a {
   text-decoration: none;
 }
-
+/* ul {
+  list-style: none;
+} */
+.navigation {
+  list-style: none;
+}
 /* #region header*/
 
 .page-nav .logo-top {
@@ -35,6 +40,7 @@ a {
 
 .contacts {
   font-style: normal;
+  list-style: none;
 }
 .contacts .contact {
   color: #434455;
@@ -82,6 +88,9 @@ a {
 /* #endregion */
 
 /* #region benefits */
+.list-ben {
+  list-style: none;
+}
 .title-ben {
   color: #2e2f42;
   font-size: 20px;
@@ -132,11 +141,16 @@ a {
 }
 .team-list {
   background-color: #ffffff;
+  list-style: none;
 }
 
 /* #endregion team */
 
 /* #region portfolio */
+
+.port-list {
+  list-style: none;
+}
 .title-port {
   color: #2e2f42;
   text-align: center;
