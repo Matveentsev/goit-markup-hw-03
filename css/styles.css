@@ -3,13 +3,17 @@ body {
   background-color: #fff;
   color: #434455;
 }
+/*
+default settings
+font-size: 16;
+font-weight(title): 700;
+font-weight(text): 400;
+*/
 a {
   text-decoration: none;
 }
-/* ul {
-  list-style: none;
-} */
-.navigation {
+ul,
+ol {
   list-style: none;
 }
 /* #region header*/
@@ -40,7 +44,7 @@ a {
 
 .contacts {
   font-style: normal;
-  list-style: none;
+  /* list-style: none; */
 }
 .contacts .contact {
   color: #434455;
@@ -89,7 +93,7 @@ a {
 
 /* #region benefits */
 .list-ben {
-  list-style: none;
+  /* list-style: none; */
 }
 .title-ben {
   color: #2e2f42;
@@ -141,7 +145,7 @@ a {
 }
 .team-list {
   background-color: #ffffff;
-  list-style: none;
+  /* list-style: none; */
 }
 
 /* #endregion team */
@@ -149,7 +153,7 @@ a {
 /* #region portfolio */
 
 .port-list {
-  list-style: none;
+  /* list-style: none; */
 }
 .title-port {
   color: #2e2f42;
