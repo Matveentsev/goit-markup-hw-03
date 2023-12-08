@@ -13,6 +13,7 @@ main {
 }
 img {
   display: block;
+  width: 100%;
 }
 h1,
 h2,
@@ -31,19 +32,13 @@ ol {
   margin: 0;
   padding: 0;
 }
-/* flex
-Давай підсумуємо?
-Властивість flex-direction задає напрямок головній і поперечній осям.
-Властивість justify-content керує розташуванням елементів уздовж головної осі. Тобто, якщо main axis горизонтально, можна елементи по горизонталі переміщувати.
-Властивість align-items керуватє елементами по висоті
- */
-/* правило для усієї сторінки */
 
 /* розмір кожної секції */
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+/* правило для усієї сторінки */
 .container {
   max-width: 1159px;
   padding: 0 15px;
@@ -144,9 +139,6 @@ ol {
 .benefits {
   color: #2e2f42;
 }
-.box-ben {
-  /* padding: 120px 0px; */
-}
 .list-ben {
   display: flex;
   flex-wrap: wrap;
@@ -227,6 +219,11 @@ ol {
   flex-wrap: wrap;
   gap: 24px;
 }
+.box-text-port {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .title-port {
   text-align: center;
   font-size: 36px;
@@ -241,13 +238,11 @@ ol {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 .text-list {
   line-height: 24px;
   letter-spacing: 0.32px;
-}
-.item-port {
-  /* border: 1px solid #e7e9fc; */
 }
 /* #endregion portfolio */
 
