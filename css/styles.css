@@ -25,6 +25,12 @@ ol {
 img {
   display: block;
 }
+/* flex
+Давай підсумуємо?
+Властивість flex-direction задає напрямок головній і поперечній осям.
+Властивість justify-content керує розташуванням елементів уздовж головної осі. Тобто, якщо main axis горизонтально, можна елементи по горизонталі переміщувати.
+Властивість align-items керуватє елементами по висоті
+ */
 /* правило для усієї сторінки */
 main {
   flex-grow: 1;
@@ -41,7 +47,9 @@ main {
   margin: 0 auto;
 }
 /* #region header*/
-
+.header {
+  justify-content: space-between;
+}
 .logo-top {
   font-size: 18px;
   font-weight: 700;
