@@ -4,11 +4,15 @@ body {
   color: #434455;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-a {
-  font-style: normal;
-  color: currentColor;
-  text-decoration: none;
+main {
+  flex-grow: 1;
+}
+img {
+  display: block;
 }
 h1,
 h2,
@@ -16,14 +20,16 @@ h3,
 p {
   margin: 0;
 }
+a {
+  font-style: normal;
+  color: currentColor;
+  text-decoration: none;
+}
 ul,
 ol {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-img {
-  display: block;
 }
 /* flex
 Давай підсумуємо?
@@ -32,23 +38,33 @@ img {
 Властивість align-items керуватє елементами по висоті
  */
 /* правило для усієї сторінки */
-main {
-  flex-grow: 1;
-}
-.page-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+
 /* розмір кожної секції */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .container {
   max-width: 1159px;
   padding: 0 15px;
   margin: 0 auto;
 }
 /* #region header*/
-.header {
-  justify-content: space-between;
+.box-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 15px;
+}
+.navigacion,
+.list-nav,
+.list-contacts {
+  display: flex;
+}
+.address {
+  margin-left: auto;
+}
+.contact {
+  padding-left: 40px;
 }
 .logo-top {
   font-size: 18px;
@@ -57,6 +73,7 @@ main {
   letter-spacing: 0.54px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .span-top {
   color: #4d5ae5;
@@ -67,6 +84,7 @@ main {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
+  margin-right: 40px;
 }
 .nav:hover,
 .nav:focus,
@@ -87,32 +105,34 @@ main {
 
 .main-page {
   background-color: #2e2f42;
-  height: 600px;
+}
+.box-main {
+  padding: 188px;
 }
 .main-title {
   width: 496px;
-  height: 120px;
-  margin-bottom: 48px;
-  margin: 0 auto;
   color: white;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 1.12px;
   text-align: center;
+  display: block;
+  margin: auto;
+  padding-bottom: 48px;
 }
-.button {
-  padding: 16px 32px;
-  border: none;
-}
+
 .button {
   color: white;
   background-color: #4d5ae5;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
+  padding: 16px 32px;
+  border: none;
+  margin: auto;
+  display: block;
 }
 .button:hover,
 .button:focus {
@@ -123,17 +143,22 @@ main {
 /* #region benefits */
 .benefits {
   color: #2e2f42;
-  margin-top: 120px;
-  margin-bottom: 120px;
+}
+.box-ben {
+  /* padding: 120px 0px; */
 }
 .list-ben {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  margin: auto;
+}
+.item-ben:first-child {
+  margin-left: 0;
 }
 .item-ben {
   max-width: 264px;
   background-color: #fff;
+  margin-left: 24px;
 }
 .title-ben {
   margin-bottom: 8px;
@@ -153,33 +178,54 @@ main {
   background-color: #f4f4fd;
   color: #2e2f42;
 }
+
 .title-team {
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  /* padding-top: 120px; */
 }
-.title-team-list {
+.list-team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-top: 72px;
+}
+.list-item {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+}
+.box-text {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 32px 0;
+}
+.title-list {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
-.text-team-list {
+.text-list {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
 
-.team-list {
-  background-color: #ffffff;
-}
 /* #endregion team */
 
 /* #region portfolio */
 
 .list-port {
   color: #2e2f42;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .title-port {
   text-align: center;
@@ -188,20 +234,35 @@ main {
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
-.title-port-list {
+.title-list {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
 }
-.text-port-list {
+.text-list {
   line-height: 24px;
   letter-spacing: 0.32px;
+}
+.item-port {
+  /* border: 1px solid #e7e9fc; */
 }
 /* #endregion portfolio */
 
 /* #region footer */
+
+.footer-logo,
+.footer-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.box-footer {
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
 .footer {
   color: #f4f4fd;
   background-color: #2e2f42;
@@ -218,6 +279,8 @@ main {
   color: #4d5ae5;
 }
 .footer-text {
+  margin-top: 17.5px;
+  width: 264px;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
